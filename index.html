@@ -1,96 +1,310 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PartyZone! Productions</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+    <link rel="stylesheet" href="CSS/custom.css">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
+
+  </head>
+  <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- This is where the navbar starts.  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+
+
+
+
+      <div id="NavBar" class="container">
+  <a class="navbar-brand order-1 mr-0 text-warning" href="http://www.pzpentertainment.com" target="_blank">Reimagined By Party Zone! Productions</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a id="homebutton" class="nav-link" href="#my-jumbotron">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a id="aboutbutton" class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a id="crewbutton" class="nav-link" href="#crew">Crew</a>
+      </li>
+      <li class="nav-item">
+        <a id="schedulebutton" class="schedule nav-link" href="#schedule">Schedule</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+    <!-- this is where the navbar ends.  -->
+
+<!-- This is where the main PartyZone! Logo will go  -->
+
+<div class="jumbotron jumbotron-fluid bg-info text-white">
+  <div id="my-jumbotron" class="container text-sm-center pt-5">
+    <h1 class="display-1 text-warning">PartyZone! Productions</h1>
+    <p class="lead text-warning">Weddings & Coperate Events Should be fun!</p>
+
+
+    <div class="btn-group mt-4" role="group" aria-label="Callout Buttons">
+      <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#register">Registar Now</button>
+      <a class="schedule btn btn-light btn-lg text-white" href="#schedule">See Dates</a>
+
     </div>
+  </div>
+</div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+<!-- Jumbotron ends  -->
+
+    <div class="container pt-4">
+      <!-- about  -->
+    <div id="about" class="row">
+      <div class="col-lg order-lg-2">
+        <h3 class="mb-4">About PartyZone!</h3>
+        <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/Over View of Party Zone.png" alt="About PartyZone">
       </div>
+      <div class="col-lg order-lg-1">
+        <h3 class="mb-4">We do all sorts of events from...</h3>
+        <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/Weddings.png" alt="Wedding Receptions">
 
-      <hr>
+      </div>
+      <div class="col-lg order-lg-3">
+        <h3 class="mb-4">and we also do!</h3>
+        <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/Coperate.png" alt="Coperate Events">
 
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+          </div>
+      </div>
+    </div> <!-- /about  -->
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+<!-- PartyZone! Crew & assistants!  -->
 
-        <script src="js/main.js"></script>
-    </body>
+            <h1 id="crew" class="display-4 text-center my-5 text-muted">Our Crew!</h1>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+
+
+                    <div class="card mb-3">
+                      <img id="Cory Leonardo" class="card-img-top" src="img/coryLeonardo.jpeg" alt="Cory Leonardo">
+                      <div class="card-body">
+                        <h4 class="card-title">Cory Leonardo</h4>
+                        <p class="card-text"> Owner & DJ</p>
+                      </div>
+                    </div>
+
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+
+                            <div class="card mb-3">
+                <img class="card-img-top" src="img/freddieCowgill.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Freddie Cowgill</h4>
+                  <p class="card-text">DJ/ DJ Assistant & Warehouse Crew</p>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+
+
+                <div class="card mb-3">
+                  <img class="card-img-top" src="img/jasonHeil.jpeg" alt="Jason Heil">
+                  <div class="card-body">
+                    <h4 class="card-title">Jason Heil</h4>
+                    <p class="card-text">DJ/ DJ Assistant.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-12">
+
+
+            <!-- end of DJs and Crew Slot -->
+
+<!-- Make an appointment with us! :)  -->
+<h1 id="schedule" class="display-4 text-center my-5 text-muted">Schedule a time to see us!</h1>
+<p class="text-center">We are open Monday-Friday, and are generally flexible with any scheudle. Call now to make an appointment!</p>
+
+
+
+<!-- This is where the appointment info slot ends.  -->
+
+
+<!-- Here is where future brides or grooms will click to registar  -->
+
+<button id="registar" type="button" class="btn btn-outline-dark button-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register" data-toggle="modal" data-target="#register">Don't Miss Out, Registar Now!</button>
+
+
+<!-- This is where the registar button ends  -->
+
+<!-- Form where people will fill out there information to either book an appoinment or save the date! -->
+<hr>
+			  <div class="col-md col-xl-5 ml-auto">
+			  	<p id="schedule"><strong>Stay up-to-date with all things going on at PartyZone! Productions</strong></p>
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="Email">
+			      <span class="input-group-btn">
+			        <button class="btn btn-warning" type="button">Sign up for our news letter</button>
+			      </span>
+			    </div>
+			  </div>
+			</div>
+			<hr>
+
+      <!-- This is where the sign up form ends. -->
+
+              <!-- Footer -->
+      <div class="col-md-6 col-lg-12">
+
+         <div class="row py-3">
+           <div class="col-md-7">
+
+             <ul class="nav">
+               <li class="nav-item">
+                 <a class="nav-link" href="http://www.louisvilleweddingshows.net/home.html">Louisville Wedding Network</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Event Locations</a>
+               </li>
+               <li class="nav-item">
+
+           </div>
+           <div class="col-md text-md-right">
+             <small>&copy; 2017 PartyZone Productions</small>
+           </div>
+         </div>
+
+
+
+         <!-- /Footer -->
+
+    </div><!-- /.container -->
+
+
+
+    <!--=====================================
+         FORM MODAL
+        =====================================-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Save the Date</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+                  <!-- Registration Form -->
+
+                  <form>
+
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                      <strong>Hurry!</strong> Book online now and get a free Custom First Dance!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+
+                    <h5 class="mb-4">Baisc Info</h5>
+                    <div class="form-group">
+                      <label class="col-form-label" for="name">Name:</label>
+                      <input id="name" type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="form-group">
+                      <label class="col-form-label" for="email">Email:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label class="col-form-label" for="job">Event Type:</label>
+                      <select class="custome-select form-control" id="role">
+
+                      <option value="full stack js developer">Wedding</option>
+                      <option value="front end developer">Wedding & Reception</option>
+                      <option value="back end developer">Equipment Rental</option>
+                      <option value="designer">Coperate Event</option>
+                      <option value="student">Other</option>
+
+                      </select>
+                    </div>
+
+                <hr class="mb-4">
+                <button type="submit" class="btn btn-warning btn-lg">Register</button>
+
+                  </form>
+
+                  <!-- /Registration Form  -->
+
+            </div>
+          </div>
+        </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <script>
+
+  $("#homebutton").click(function() {
+    console.log("click");
+    $('html, body').animate({
+        scrollTop: $("#my-jumbotron").offset().top
+    }, 2000);
+  });
+
+  $("#aboutbutton").click(function() {
+    console.log("click");
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 2000);
+  });
+
+  $("#crewbutton").click(function() {
+    console.log("click");
+    $('html, body').animate({
+        scrollTop: $("#crew").offset().top
+    }, 2000);
+  });
+
+  $("#schedulebutton").click(function() {
+    console.log("click");
+    $('html, body').animate({
+        scrollTop: $("#schedule").offset().top
+    }, 2000);
+  });
+
+  $(".schedule").click(function() {
+    console.log("click");
+    $('html, body').animate({
+        scrollTop: $("#schedule").offset().top
+    }, 2000);
+  });
+
+
+
+  </script>
+</body>
+</html>
+
+
+
+  </body>
 </html>
