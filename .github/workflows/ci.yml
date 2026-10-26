@@ -1,0 +1,42 @@
+# Automated checks (added October 2026)
+#
+# This is a plain website (nothing to compile), so CI checks the things that
+# could actually break it:
+#   1. the integrity hashes on the CDN scripts still match the real files
+#      (a wrong hash makes browsers refuse to load them)
+#   2. every local file the page references (images, CSS, app.js) exists
+#   3. app.js has no JavaScript syntax errors
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Check CDN integrity hashes
+        run: bash .github/scripts/check-sri.sh index.html
+
+      - name: Check local files exist
+        run: |
+          # (read line by line because some image names contain spaces)
+          grep -oE '(src|href)="[^"#:]+"' index.html | cut -d'"' -f2 | sort -u > refs.txt
+          missing=0
+          while IFS= read -r f; do
+            if [ -e "$f" ]; then echo "OK       $f"; else echo "MISSING  $f"; missing=1; fi
+          done < refs.txt
+          exit $missing
+
+      - name: Check JavaScript syntax
+        run: node --check app.js
